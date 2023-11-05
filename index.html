@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="style/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/medai.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -21,7 +25,8 @@
         <a class="navbar-brand py-0 me-0" href="#">
           <img class="ms-lg-5 ms-md-4 ms-sm-2 ms-0" src="./img/logo.png">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,24 +50,27 @@
     <div class="container-fluid">
 
       <!-- LOGIN -->
-      
+
       <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body">
-              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                aria-label="Close"></button>
               <div class="myform bg-white">
                 <h1 class="text-center dark-blue">Login Form</h1>
                 <form>
                   <div class="mb-3 mt-4">
                     <label for="exampleInputEmail1" class="form-label dark-blue">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      required>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label dark-blue">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" required>
                   </div>
-                  <button type="submit" class="btn1 dark-blue mt-3 dark-blue">LOGIN</button> <!--RELOAD PAGE = onclick="location.reload(); return false;" -->
+                  <button type="submit" class="btn1 dark-blue mt-3 dark-blue">LOGIN</button>
+                  <!--RELOAD PAGE = onclick="location.reload(); return false;" -->
                 </form>
               </div>
             </div>
@@ -70,11 +78,14 @@
         </div>
       </div>
       <div class="ms-lg-5 ms-md-4 ms-sm-2 ms-0 mt-5 pt-5 mb-5">
-        <h1 class="display-6 m-0">Welcome To</h1><h1 class="AGP display-1 m-0" id="box1">LUXURY</h1><h1 class="AGP m-0 display-2" id="hotel2">HOTELS</h1>
+        <h1 class="display-6 m-0">Welcome To</h1>
+        <h1 class="AGP display-1 m-0" id="box1">LUXURY</h1>
+        <h1 class="AGP m-0 display-2" id="hotel2">HOTELS</h1>
         <p>Book your stay and enjoy Luxury<br>redefined at the most affordable rates</p>
       </div>
       <div class="d-flex flex-column align-items-center">
-        <a class="btn d-flex align-items-center text-center py-0" href="#" role="button" id="book_now" data-bs-toggle="modal" data-bs-target="#ModalForm">
+        <a class="btn d-flex align-items-center text-center py-0" href="#" role="button" id="book_now"
+          data-bs-toggle="modal" data-bs-target="#ModalForm">
           <img class="me-2" src="img/Group 37.png" height="28px" width="28px">
           <p class="fw-bold mt-3">Book Now</p>
         </a>
@@ -86,7 +97,7 @@
         </div>
       </div>
     </div>
-  </header>   
+  </header>
 
   <!-- CONTENT -->
 
@@ -99,22 +110,89 @@
     </div>
   </div>
 
-  <!-- CARTS -->
-  
+
   <!DOCTYPE html>
-  <html lang="en">  
+  <html lang="en">
   <div class="products">
     <div class="container">
+      <!-- Button trigger modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title dark-blue" id="staticBackdropLabel">Luxury Redefined</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- СЮДА ПИСАТЬ  -->
+            <div class="modal-body dark-blue">
+              Luxury hotel rooms offer an exceptional and unforgettable experience for travelers seeking the highest
+              level of comfort, service, and aesthetics. These rooms are carefully designed to provide guests with the
+              ultimate indulgence, creating a world of opulence and relaxation within the confines of a hotel. Here are
+              some key features and elements you can expect in luxury hotel rooms:
+            </div>
+            <!-- СЮДА ПИСАТЬ -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title dark-blue" id="staticBackdropLabel">Entertainments</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- СЮДА ПИСАТЬ  -->
+            <div class="modal-body dark-blue">
+              Hotels often offer a range of entertainment options to ensure that guests have a memorable and enjoyable
+              stay. These entertainment offerings can vary widely, catering to diverse tastes and preferences. Here are
+              some common forms of entertainment you might find in hotels:
+            </div>
+            <!-- СЮДА ПИСАТЬ -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title dark-blue" id="staticBackdropLabel">Culinary Delights</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- СЮДА ПИСАТЬ  -->
+            <div class="modal-body dark-blue">
+              Culinary delights are a significant aspect of the hotel experience, and many hotels take great pride in
+              offering a diverse and exquisite array of dining options. Here are some key points to consider when
+              exploring the culinary offerings within a hotel:
+            </div>
+            <!-- СЮДА ПИСАТЬ -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row card-deck">
         <div class="col-lg-4">
           <div class="card">
             <img src="img/steven-ungermann-aRT5UCf2MYY-unsplash.png" class="card-img-top" alt="Product 1">
             <div class="card-body">
               <h5 class="card-title">Luxury redefined</h5>
-              <p class="card-text">Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.</p>
+              <p class="card-text">Our rooms are designed to transport you into an environment made for leisure. Take
+                your mind off the day-to-day of home life and find a private paradise for yourself.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group" role="button">
-                  <button type="button" class="btn btn-sm" onclick="lux_view" id="lux_view">View</button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">View</button>
                 </div>
               </div>
             </div>
@@ -125,10 +203,13 @@
             <img src="img/раз.webp" class="card-img-top" alt="Product 2">
             <div class="card-body">
               <h5 class="card-title">Entertainments</h5>
-              <p class="card-text">We love life at the beach. Being close to the ocean with access to endless sandy beach ensures a relaxed state of mind. It seems like time stands still watching the ocean.</p>
-              <div class="d-flex justify-content-between align-items-center">
+              <p class="card-text">We love life at the beach. Being close to the ocean with access to endless sandy
+                beach ensures a relaxed state of mind. It seems like time stands still watching the ocean.</p>
+              <div class="d-flex justify-content-between align-items-center" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm" id="ent_view">View</button>
+                  <button type="button" class="btn btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">View</button>
                 </div>
               </div>
             </div>
@@ -139,10 +220,13 @@
             <img src="img/cafe.jpg" class="card-img-top" alt="Product 3">
             <div class="card-body">
               <h5 class="card-title">Culinary Delights</h5>
-              <p class="card-text">Our hotel's kitchen is where culinary delights come to life. It's not just a place to prepare meals; it's a stage for culinary artistry. Every ingredient is carefully chosen, every dish meticulously crafted.  </p>
+              <p class="card-text">Our hotel's kitchen is where culinary delights come to life. It's not just a place to
+                prepare meals; it's a stage for culinary artistry. Every ingredient is carefully chosen, every dish
+                meticulously crafted. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm" id="cul_view">View</button>
+                  <button type="button" class="btn btn-sm " data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3">View</button>
                 </div>
               </div>
             </div>
@@ -151,9 +235,7 @@
       </div>
     </div>
   </div>
-
   <!-- FOOTER -->
-
   <footer class="container-fluid mt-4">
     <div class="row">
       <div class="col-lg-3 col-sm-6">
@@ -170,7 +252,7 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">Terms & Conditions</a></li>
           </ul>
-        </div>                    
+        </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="single-box">
@@ -180,14 +262,16 @@
             <li><img src="img/Path 39.png" alt=""><span>Twitter</span></li>
             <li><img src="img/Path 40.png" alt=""><span>Instagram</span></li>
           </ul>
-        </div>                    
+        </div>
       </div>
       <div class="col-lg-3 col-sm-6">
         <div class="single-box">
           <h2>Newsletter</h2>
-          <p>We welcome you to your hotel, now we have the season, there are most discounts for foreigners and guests, Come do not regret it</p>
+          <p>We welcome you to your hotel, now we have the season, there are most discounts for foreigners and guests,
+            Come do not regret it</p>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..."
+              aria-describedby="basic-addon2">
             <button class="input-group-text" id="basic-addon2">Send<i class="fa fa-long-arrow-right"></i></button>
           </div>
         </div>
@@ -195,7 +279,12 @@
     </div>
   </footer>
   <script src="./js/welcome_sound.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
