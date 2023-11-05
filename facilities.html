@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="./style/facilities.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+
+	<header class="container-fluid" id="main">
+		<nav class="navbar navbar-expand-lg navbar-dark py-0">
+			<div class="container-fluid">
+				<a class="navbar-brand py-0 me-0" href="#">
+					<img class="ms-lg-5 ms-md-4 ms-sm-2 ms-0" src="./img/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto fs-5">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Facilities</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="rooms.html">Rooms</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+
+			<!-- LOGIN -->
+			
+			<div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+							<div class="myform bg-white">
+								<h1 class="text-center dark-blue">Login Form</h1>
+								<form>
+									<div class="mb-3 mt-4">
+										<label for="exampleInputEmail1" class="form-label dark-blue">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputPassword1" class="form-label dark-blue">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" required>
+									</div>
+									<button type="submit" class="btn1 dark-blue mt-3 dark-blue">LOGIN</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ms-lg-5 ms-md-4 ms-sm-2 ms-0 mt-5 pt-5 mb-5">
+				<h1 class="display-6 m-0">Welcome To</h1><h1 class="AGP display-1 m-0" id="box1">LUXURY</h1><h1 class="AGP m-0 display-2" id="hotel2">HOTELS</h1>
+				<p>Book your stay and enjoy Luxury<br>redefined at the most affordable rates</p>
+			</div>
+			<div class="d-flex flex-column align-items-center">
+				<a class="btn d-flex align-items-center text-center py-0" href="#" role="button" id="book_now" data-bs-toggle="modal" data-bs-target="#ModalForm">
+					<img class="me-2" src="img/Group 37.png" height="28px" width="28px">
+					<p class="fw-bold mt-3">Book Now</p>
+				</a>
+				<div class="scroll d-flex flex-column align-items-center mb-4">
+					<h5 class="fw-bold mt-5">Scroll</h5>
+					<a href="#content">
+						<img src="img/Subtraction 2.png" alt="" width="40px">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- MAIN --> 
+
+	<div class="container-fluid dark-blue" style="width: 80%; display: flex; align-items: center; justify-content: center; flex-direction: column;" id="content">
+		<div class="card mt-5">
+			<img src="img/bar.png" class="card-img-top" alt="Bar">
+			<div class="card-body">
+				<h5 class="card-title">Modern bar</h5>
+				<p class="card-text">Nestled beside the shimmering waters of our inviting pool, our poolside bar
+					is the perfect oasis for relaxation and refreshment. Dive into a world of tropical
+					indulgence as you soak up the sun and savor delicious drinks and snacks.
+				</p>
+				<a class="btn btn-primary" role="button" id="bar_check">Check the menu</a>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<img src="img/gym.png" class="card-img-top" alt="Gym">
+			<div class="card-body">
+				<h5 class="card-title">High-tech gym</h5>
+				<p class="card-text">Welcome to our state-of-the-art fitness center, where we're
+					dedicated to helping you reach your health and wellness goals. Our gym is more than just a
+					place to work out; it's a destination for transformation, strength-building, and overall
+				well-being.</p>
+				<a class="btn btn-primary" id="3d_check">Look 3D Tour</a>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<img src="img/laundry.png" class="card-img-top" alt="Laundry">
+			<div class="card-body">
+				<h5 class="card-title">Laundry</h5>
+				<p class="card-text">At our laundry service, we understand that life can get busy, and
+					laundry
+					can
+					be a time-consuming chore. That's why we're here to take the load off your shoulders and
+					make
+				laundry day a breeze.</p>
+				<a class="btn btn-primary" id="laundry_check">Book a queue</a>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<img src="img/swim.png" class="card-img-top" alt="Pool">
+			<div class="card-body">
+				<h5 class="card-title">Swimming pool with auto temperature</h5>
+				<p class="card-text">Escape the ordinary and step into a world of aquatic bliss at our
+					stunning
+					swimming pool. Nestled amidst lush surroundings, our pool is a sanctuary of
+					relaxation,
+					recreation, and serenity. Our pool's crystal-clear waters beckon you to take a
+					refreshing
+					plunge. Whether you're an early riser seeking a peaceful swim or a sun worshiper
+					looking to
+					bask
+				in the warmth, our pool welcomes you all day long.</p>
+				<a class="btn btn-primary" role="button" id="swim_check">See the pictures</a>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<img src="img/spa.png" class="card-img-top" alt="Spa">
+			<div class="card-body">
+				<h5 class="card-title">Spa and massage center</h5>
+				<p class="card-text">Welcome to a haven of relaxation and rejuvenation, where your
+					well-being
+					takes
+					center stage. Our Spa and Massage Center is designed to provide you with a
+					sanctuary for the
+					body and soul, offering a range of therapeutic treatments to melt away stress
+					and soothe
+					your
+				senses.</p>
+				<a class="btn btn-primary" role="button" id="spa_check">Look the types of massage</a>
+			</div>
+		</div>
+		<div class="card my-5">
+			<img src="img/restaurant.png" class="card-img-top" alt="Restaurant">
+			<div class="card-body">
+				<h5 class="card-title">Restaurant of world</h5>
+				<p class="card-text">Welcome to "World Flavors," your passport to an
+					extraordinary culinary
+					adventure. We invite you to embark on a gastronomic journey that spans
+					continents, as we
+					bring
+					you the authentic and tantalizing national dishes from countries near and
+					far. At World
+					Flavors,
+					our mission is to celebrate the rich tapestry of global cuisine. Our chefs
+					are masters of
+					their craft, hailing from different corners of the world, each specializing
+					in the traditional
+					flavors
+				and cooking techniques of their respective homelands.</p>
+				<a class="btn btn-primary" id="rest_check">See the menu</a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="width: 100%; display: flex; align-items: center; justify-content: center;" id="sliderJs">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="img-slider ">
+					<div class="slide">
+						<img src="img/bar.png" alt="">
+						<div class="info">
+							<h2>Modern bar</h2>
+							<p>Nestled beside the shimmering waters of our inviting pool, our poolside bar
+								is the perfect oasis for relaxation.
+							</p>
+						</div>
+
+
+					</div>
+					<div class="slide">
+						<img src="img/gym.png" alt="">
+						<div class="info">
+							<h2>High-tech gym</h2>
+							<p>Welcome to our state-of-the-art fitness center, where we're
+								dedicated to helping you reach your health and wellness goals.
+							</p>
+						</div>
+
+
+					</div>
+					<div class="slide">
+						<img src="img/restaurant.png" alt="">
+						<div class="info">
+							<h2>Restaurant of world</h2>
+							<p>Welcome to "World Flavors", your passport to an extraordinary culinary
+								adventure.
+							</p>
+						</div>
+
+					</div>
+					<div class="slide">
+						<img src="img/spa.png" alt="" width="250px">
+						<div class="info">
+							<h2>Spa and massage center</h2>
+							<p>Welcome to a haven of relaxation and rejuvenation, where your well-being
+								takes center stage.
+							</p>
+						</div>
+
+
+					</div>
+					<div class="slide">
+						<img src="img/swim.png" alt="">
+						<div class="info">
+							<h2>Swimming pool with auto temperature</h2>
+							<p>Escape the ordinary and step into a world of aquatic bliss at our stunning
+								swimming pool.
+							</p>
+						</div>
+					</div>
+					<div class="navigation">
+						<div class="btn"></div>
+						<div class="btn"></div>
+						<div class="btn"></div>
+						<div class="btn"></div>
+						<div class="btn"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer class="container-fluid mt-4">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-box">
+					<h1 class="AGP">LUXURY<br>HOTELS</h1>
+					<h3 class="fs-6">497 Evergreen Rd. Roseville, CA 95673 +44 345 678 903 luxury_hotels@gmail.com</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-box">
+					<h2>Service</h2>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>                    
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-box">
+					<h2>Media</h2>
+					<ul>
+						<li><img src="img/Path 38.png" alt=""><span>Facebook</span></li>
+						<li><img src="img/Path 39.png" alt=""><span>Twitter</span></li>
+						<li><img src="img/Path 40.png" alt=""><span>Instagram</span></li>
+					</ul>
+				</div>                    
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-box">
+					<h2>Newsletter</h2>
+					<p>We welcome you to your hotel, now we have the season, there are most discounts for foreigners and guests, Come do not regret it</p>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+						<button class="input-group-text" id="basic-addon2">Send<i class="fa fa-long-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/slider.js"></script>
+	<script src="./js/welcome_sound.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
