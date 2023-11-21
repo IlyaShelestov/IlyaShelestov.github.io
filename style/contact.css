@@ -25,10 +25,6 @@ body {
 
 /* HEADER */
 
-header{
-    background: #14274A;
-}
-
 .navbar ul li{
     margin: 0 10px;
     position: relative;
@@ -52,19 +48,6 @@ header{
 .btn{
     background-color: #E0B973;
     color: white;
-}
-
-/*  CONTENT */
-.content{
-    margin-top: 100px;
-}
-.content p {
-    color: #14274A;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 /* FOOTER */

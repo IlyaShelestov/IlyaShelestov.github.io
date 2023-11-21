@@ -10,8 +10,10 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 </head>
 <body>
+
 	<!-- HEADER -->
-	<header class="container-fluid">
+
+	<header class="container-fluid dark-blue-back">
 		<nav class="navbar navbar-expand-lg navbar-dark py-0">
 			<div class="container-fluid">
 				<a class="navbar-brand py-0 me-0" href="#">
@@ -42,7 +44,9 @@
 			<p class="display-1 fw-bold text-center pt-3 pb-5 mb-5">CONTACT US</p>
 		</div>
 	</header>
+
 	<!-- MAIN -->
+
 	<main class="container-fluid" id="content">
 		<div class="modal fade" id="exampleModal" tabindex="-1">
 			<div class="modal-dialog">
@@ -71,17 +75,20 @@
 				<form class="row" id="form">
 					<div class="col-6">
 						<label for="name" class="form-label dark-blue">Name:</label>
-						<input type="text" class="form-control" id="name" placeholder="e.g. Mike" name="name" required>
+						<input type="text" class="form-control" id="name" placeholder="e.g. Mike" name="name">
+						<p class="bg-danger mt-1 p-1 rounded d-none" id="info-1">1</p>
 					</div>
 
 					<div class="col-6">
 						<label for="surname" class="form-label dark-blue">Surame:</label>
-						<input type="text" class="form-control" id="surname" placeholder="e.g. Smith" name="surname" required>
+						<input type="text" class="form-control" id="surname" placeholder="e.g. Smith" name="surname">
+						<p class="bg-danger mt-1 p-1 rounded d-none" id="info-2">2</p>
 					</div>
 
 					<div class="col-12">
 						<label for="email" class="form-label dark-blue">Email address:</label>
-						<input type="email" class="form-control" id="email" placeholder="e.g. mike2202@example.com" name="email" required>
+						<input type="email" class="form-control" id="email" placeholder="e.g. mike2202@example.com" name="email">
+						<p class="bg-danger mt-1 p-1 rounded d-none" id="info-3">3</p>
 					</div>
 
 					<div class="col-12">
@@ -96,7 +103,9 @@
 			</div>
 		</div>
 	</main>
+
 	<!-- FOOTER -->
+
 	<footer class="container-fluid mt-4">
 		<div class="row">
 			<div class="col-lg-3 col-sm-6">
