@@ -96,6 +96,10 @@ main input {
     width: 100px;
 }
 
+.info-cart {
+    padding-left: 140px;
+}
+
 /* MODAL CSS */
 
 #ModalForm.modal-content {

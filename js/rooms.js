@@ -1,16 +1,40 @@
-/* TOAST */
+/* TOASTS */
 
-const buttons = document.querySelectorAll(".reserveBtn");
-
-buttons.forEach(button => {
-    button.addEventListener("click", function() {
-        var toastElList = [].slice.call(document.querySelectorAll('.toast'));
-        var toastList = toastElList.map(function(toastEl) {
-            return new bootstrap.Toast(toastEl);
-        });
-        toastList.forEach(toast => toast.show());
+function showToast() {
+    let toastElList = [].slice.call(document.querySelectorAll('.toast'));
+    let toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl);
     });
-});
+    toastList[0].show();
+}
+
+function showWarning() {
+    let toastElList = [].slice.call(document.querySelectorAll('.toast'));
+    let toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl);
+    });
+    toastList[1].show();
+}
+
+function showNotEmptyCart() {
+    let toastElList = [].slice.call(document.querySelectorAll('.toast'));
+    let toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl);
+    });
+    toastList[2].show();
+}
+
+function showTotal() {
+    let toastElList = [].slice.call(document.querySelectorAll('.toast'));
+    let toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl);
+    });
+
+    let totalCost = document.getElementById("total_cost").innerHTML;
+
+    document.getElementById("total_cost_toast").innerHTML = totalCost;
+    toastList[3].show();
+}
 
 /* MODAL INFO */
 
@@ -75,7 +99,7 @@ function filterSelection(c) {
   for (let i = 0; i < filterDivs.length; i++) {
     filterDivs[i].classList.remove('d-none');
     if (filterDivs[i].className.indexOf(c) === -1) filterDivs[i].classList.add('d-none');
-  }
+}
 }
 
 const btnContainer = document.getElementById("myBtnContainer");
@@ -86,7 +110,7 @@ for (let i = 0; i < btns.length; i++) {
     const current = document.getElementsByClassName("btn-selected");
     current[0].classList.remove('btn-selected');
     this.classList.add('btn-selected');
-  });
+});
 }
 
 /* FILTERING PRICE */
@@ -103,4 +127,103 @@ function filterPrice() {
             filterDivs[i].classList.add('priceFilter');
         }
     }
+}
+
+/* CART LOGIC */
+
+function showCart() {
+   var offcanvas = new bootstrap.Offcanvas(document.querySelector(".offcanvas"));
+   offcanvas.show();
+}
+
+function isCartEmpty() {
+    const items = document.getElementsByClassName("itemHolder");
+    for (let i = 0; i < items.length; i++) {
+        if (!items[i].classList.contains("d-none")) {
+            document.getElementById("empty-info").classList.add("d-none"); 
+            return;
+        }
+    }
+    document.getElementById("empty-info").classList.remove("d-none");
+}
+
+function cartFunction() {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (!isLoggedIn) {
+        showWarning();
+        return;
+    }
+
+    isCartEmpty();
+    showCart();
+}
+
+function addToCartActions(c) {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (!isLoggedIn) {
+        showWarning();
+        return;
+    }
+
+    let amount = document.querySelectorAll(".itemHolder input")[c];
+    amount.value = parseInt(amount.value) + 1;
+
+    document.getElementsByClassName("itemHolder")[c].classList.remove("d-none");
+
+    document.getElementById("empty-info").classList.add("d-none");
+
+    showToast();
+    showCart();
+    setNewPrice(c);
+}
+
+function setNewPrice(c) {
+    const amount = document.querySelectorAll(".itemHolder input")[c].value;
+    const costBtn = document.querySelectorAll(".filterDiv .reserveBtn")[c];
+    let price = document.getElementsByClassName("itemHolder")[c].querySelectorAll("p")[1];
+
+    price.innerHTML = parseInt(costBtn.innerHTML.substr(1,3)) * parseInt(amount);
+
+    if (amount === "0") {
+        document.getElementsByClassName("itemHolder")[c].classList.add("d-none");
+    }
+
+    isCartEmpty();
+    updateTotalCost();
+}
+
+
+function updateTotalCost() {
+    let totalCost = 0;
+    const items = document.getElementsByClassName("itemHolder");
+
+    for (let i = 0; i < items.length; i++) {
+        totalCost += parseInt(items[i].querySelectorAll("p")[1].innerHTML);
+    }
+
+    document.getElementById("total_cost").innerHTML = totalCost;
+}
+
+function submitAction() {
+    if (!document.getElementById("empty-info").classList.contains("d-none")) {
+        showNotEmptyCart();
+        return;
+    }
+
+    showTotal();
+
+    const values = document.querySelectorAll(".itemHolder input");
+    const items = document.getElementsByClassName("itemHolder");
+    const price = document.getElementsByClassName("itemHolder");
+
+    for (let i = 0; i < items.length; i++) {
+        items[i].classList.add("d-none");
+        values[i].value = 0;
+        price[i].querySelectorAll("p")[1].innerHTML = 0;
+    }
+
+    document.getElementById("empty-info").classList.remove("d-none");
+    document.getElementById("total_cost").innerHTML = 0;
 }
