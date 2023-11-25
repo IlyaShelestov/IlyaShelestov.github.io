@@ -163,7 +163,7 @@ p .wtf{
     color: grey;
 }
 p a .wtf2{
-  
+
     text-decoration: none;
 }
 p a .wtf2:hover {
@@ -292,37 +292,37 @@ footer {
 /* LOGIN AND SIGH UP STYLE */
 .container .registration{
     display: none;
-  }
-  #check:checked ~ .registration{
+}
+#check:checked ~ .registration{
     display: block;
-  }
-  #check:checked ~ .login{
+}
+#check:checked ~ .login{
     display: none;
-  }
-  #check{
+}
+#check{
     display: none;
-  }
-  .container .form{
+}
+.container .form{
     padding: 2rem;
-  }
-  .form header{
+}
+.form header{
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 1.5rem;
-  }
-   .form input{
-     height: 60px;
-     width: 100%;
-     padding: 0 15px;
-     font-size: 17px;
-     margin-bottom: 1.3rem;
-     border: 1px solid #ddd;
-     border-radius: 6px;
-     outline: none;
-   }
-  
-   .form button{
+}
+.form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+}
+
+.form button{
     height: 60px;
     width: 100%;
     padding: 0 15px;
@@ -331,19 +331,19 @@ footer {
     border: 1px solid #ddd;
     border-radius: 6px;
     outline: none;
-   }
-   .form input:focus{
-     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-   }
-  .form a{
+}
+.form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.form a{
     font-size: 16px;
     color: #009579;
     text-decoration: none;
-  }
-  .form a:hover{
+}
+.form a:hover{
     text-decoration: underline;
-  }
-  .form button{
+}
+.form button{
     color: #fff;
     background: #009579;
     font-size: 1.2rem;
@@ -352,34 +352,34 @@ footer {
     margin-top: 1.7rem;
     cursor: pointer;
     transition: 0.4s;
-  }
-  .form button:hover{
+}
+.form button:hover{
     background: #006653;
-  }
-  .signup{
+}
+.signup{
     color: black !important;
     font-size: 17px;
     font-weight: 700 !important;
     text-align: center;
-  }
-  .signup label{
+}
+.signup label{
     color: #009579;
     cursor: pointer;
-  }
-  .signup label:hover{
+}
+.signup label:hover{
     text-decoration: underline;
-  }
-  
-  
-  form .field {
+}
+
+
+form .field {
     margin-bottom: 20px;
-  }
-  form .input-field {
+}
+form .input-field {
     position: relative;
     height: 55px;
     width: 100%;
-  }
-  .input-field input {
+}
+.input-field input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -387,11 +387,11 @@ footer {
     border-radius: 8px;
     padding: 0 15px;
     border: 1px solid #d1d1d1;
-  }
-  .invalid input {
+}
+.invalid input {
     border-color: #d93025;
-  }
-  .input-field .show-hide {
+}
+.input-field .show-hide {
     position: absolute;
     right: 13px;
     top: 50%;
@@ -400,43 +400,43 @@ footer {
     color: #919191;
     cursor: pointer;
     padding: 3px;
-  }
-  .field .error {
+}
+.field .error {
     display: flex;
     align-items: center;
     margin-top: 6px;
     color: #d93025;
     font-size: 13px;
     display: none;
-  }
-  .invalid .error {
+}
+.invalid .error {
     display: flex;
-  }
-  .error .error-icon {
+}
+.error .error-icon {
     margin-right: 6px;
     font-size: 15px;
-  }
-  .create-password .error {
+}
+.create-password .error {
     align-items: flex-start;
-  }
-  .create-password .error-icon {
+}
+.create-password .error-icon {
     margin-top: 4px;
-  }
-  .button {
+}
+.button {
     margin-bottom:30px;
-  }
-  .button input {
+}
+.button input {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
     background-color: #009579/* СЮДА */;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  
-   /* Стилизация анимированного сообщения */
-   .success-message {
+}
+
+
+/* Стилизация анимированного сообщения */
+.success-message {
     display: none;
     background-color: #4CAF50;
     color: white;
@@ -446,39 +446,46 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     animation: fadeOut 3s ease-in-out;
-  }
-  
-  /* Анимация исчезновения сообщения */
-  @keyframes fadeOut {
+}
+
+/* Анимация исчезновения сообщения */
+@keyframes fadeOut {
     0% { opacity: 1; }
     90% { opacity: 1; }
     100% { opacity: 0; }
-  }
-  
-  
-  button .forgot{
+}
+
+
+button .forgot{
     background: white;
     
-  }
-  
-  .profile{
-    
+}
+
+.profile{
+
     letter-spacing: 5px;
-  }
-  .dropdown{
+}
+.dropdown{
     display: none;
-  }
-    
-  
-  .fa-solid{
+}
+
+
+.fa-solid{
     display: none;
     padding-top: 10px;
-  }
-  
-  
-  .success-message a{
+}
+
+
+.success-message a{
     text-decoration: none;
     color: white;
     font-weight: 800  ;
-  }
-  
+}
+
+#min::-webkit-outer-spin-button,
+#min::-webkit-inner-spin-button,
+#max::-webkit-outer-spin-button,
+#max::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}

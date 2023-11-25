@@ -120,6 +120,7 @@ function filterPrice() {
     const max = parseInt(document.getElementById("max").value);
 
     const filterDivs = document.getElementsByClassName("filterDiv");
+
     for (let i = 0; i < filterDivs.length; i++) {
         const price = parseInt(filterDivs[i].querySelector(".reserveBtn").innerHTML.substr(1,3));
         filterDivs[i].classList.remove('priceFilter');
@@ -129,11 +130,29 @@ function filterPrice() {
     }
 }
 
+function reset() {
+    const filterDivs = document.getElementsByClassName("filterDiv");
+
+    for (let i = 0; i < filterDivs.length; i++) {
+        filterDivs[i].classList.remove("d-none");
+        filterDivs[i].classList.remove("priceFilter");
+    }
+
+    document.getElementById("min").value = 100;
+    document.getElementById("max").value = 200;
+
+    const btns = btnContainer.getElementsByClassName("btn");
+
+    btnContainer.getElementsByClassName("btn-selected")[0].classList.remove("btn-selected");
+
+    btns[0].classList.add("btn-selected");
+}
+
 /* CART LOGIC */
 
 function showCart() {
-   var offcanvas = new bootstrap.Offcanvas(document.querySelector(".offcanvas"));
-   offcanvas.show();
+ var offcanvas = new bootstrap.Offcanvas(document.querySelector(".offcanvas"));
+ offcanvas.show();
 }
 
 function isCartEmpty() {

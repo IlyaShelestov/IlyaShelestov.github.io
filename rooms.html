@@ -323,14 +323,15 @@
 			<button class="btn mt-1 mx-1" onclick="filterSelection('3-p')"> 3 people </button>
 			<button class="btn mt-1 ms-1" onclick="filterSelection('4-p')"> 4 people </button>
 		</div>
-		<div class="col d-flex dark-blue align-items-center pt-1">
+		<div class="col dark-blue align-items-center pt-1">
 			<span class="fs-5 fw-bold">Filter by price:</span>
 			<span class="ms-2 me-1">Min:</span>
-			<input class="mx-1" type="text" value="100" id="min">
+			<input class="mx-1" type="number" value="100" id="min">
 			<span class="mx-1"> - </span>
 			<span class="mx-1">Max:</span>
 			<input class="mx-1" type="text" value="200" id="max">
 			<button class="btn ms-1" onclick="filterPrice()">Apply</button>
+			<button class="btn ms-1" onclick="reset()">Reset</button>
 		</div>
 	</div>
 

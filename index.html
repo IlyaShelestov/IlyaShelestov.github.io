@@ -207,7 +207,7 @@
     <div class="container">
       <!-- Button trigger modal -->
       <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      <div class="modal fade modal-info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
@@ -229,7 +229,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      <div class="modal fade modal-info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
@@ -250,7 +250,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      <div class="modal fade modal-info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
@@ -281,8 +281,7 @@
                 your mind off the day-to-day of home life and find a private paradise for yourself.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">View</button>
+                  <button type="button" class="btn btn-sm" onclick="showModal(0)">View</button>
                 </div>
               </div>
             </div>
@@ -298,8 +297,7 @@
               <div class="d-flex justify-content-between align-items-center" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop2">View</button>
+                  <button type="button" class="btn btn-sm" onclick="showModal(1)">View</button>
                 </div>
               </div>
             </div>
@@ -315,8 +313,7 @@
                 meticulously crafted. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm " data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop3">View</button>
+                  <button type="button" class="btn btn-sm " onclick="showModal(2)">View</button>
                 </div>
               </div>
             </div>
@@ -377,7 +374,7 @@
   </script>
   <!-- ДО СЮДА  -->
   <script src="js/validation.js"></script>
-  <script src="js/save.js"></script>
+  <script src="js/index.js"></script>
   <script src="js/valid.js"></script>
   <script src=./js/welcome_sound.js></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
